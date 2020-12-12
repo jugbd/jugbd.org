@@ -27,16 +27,14 @@
     
         {% if tab.path %}
           {% assign ref = ref | append: tab.path | append: "/" %}
-          {% if tab.url %}
-            {% assign ref = ref | append: tab.url | append: "/" %}
-          {% endif %}
+        {% elsif tab.url %}
+          {% assign ref = tab.url | relative_url %}
         {% endif %}
   
 
         <li class="nav-item 
         {% if tab.id == page.active_tab_id %} active {% endif %}">
 
-          <!-- <a class="nav-link" href="{{ ref }}"> <i class="{{tab.icon}}"></i> <span>{{tab.name}}</span></a> -->
           <a class="nav-link" href="{{ ref }}"><span class="nav-menu">{{tab.name}}</span></a>
         </li>
 

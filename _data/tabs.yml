@@ -1,13 +1,17 @@
 -
   name: Home
-  icon: "fas fa-home"
   id: home
 -
   name: Blog
-  icon: "fas fa-blog"
   path: blog
   id: blog
 -
   name: LIVE
   path: tabs/live
   id: live
+# External Link Sample
+# -
+#   name: External Link
+#   path: https://www.facebook.com/groups/jugbd
+#   id: some-id
+
