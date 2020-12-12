@@ -584,6 +584,11 @@ img {
   }
 }
 
+.iframe-preview {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  @include align-center;
+}
 
 /*--- Begin of Markdown table style ---*/
 div.post-content .table-wrapper {
