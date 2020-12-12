@@ -9,5 +9,5 @@
   id: blog
 -
   name: LIVE
-  path: live
+  path: tabs/live
   id: live
