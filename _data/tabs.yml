@@ -7,8 +7,7 @@
   icon: "fas fa-blog"
   path: blog
   id: blog
-  
- -
+-
   name: LIVE
   path: live
   id: live
