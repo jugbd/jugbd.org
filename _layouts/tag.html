@@ -1,15 +1,26 @@
 ---
 layout: page
 ---
+{% assign tag_posts = "" | split: "" %}
+{% assign page_ltag = page.tag | downcase %}
+
+{% for post in site.posts %}
+  {% for tag in post.tags %}
+    {% assign post_ltag = tag | downcase %}
+    {% if page_ltag  == post_ltag%}
+      {% assign tag_posts = tag_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
 
 <div id="page-tag">
   <h1 class="pl-lg-2">
     <i class="fa fa-tag fa-fw text-muted"></i>
     {{ page.title }}
-    <span class="lead text-muted pl-2">{{ site.tags[page.tag] | size }}</span>
+    <span class="lead text-muted pl-2">{{ tag_posts | size }}</span>
   </h1>
   <ul class="post-content pl-0">
-    {% for post in site.tags[page.tag] %}
+    {% for post in tag_posts %}
     <li class="d-flex justify-content-between pl-md-3 pr-md-3">
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span class="dash flex-grow-1"></span>
