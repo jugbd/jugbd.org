@@ -1,0 +1,61 @@
+<div class="row">
+  <nav
+    class="col-12 navbar navbar-expand-lg navbar-light bg-white d-flex align-items-center justify-content-between flex-row">
+    <button id="navbar-trigger" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a  class="navbar-brand" href="/">
+      <img src="/assets/img/logo/jugbd-logo.png" width="50" alt="JUGBD">
+    </a>
+
+    <div class="order-xs-2 order-lg-last">
+      <i id="search-trigger" class="fas fa-search fa-fw"></i>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="d-inline d-lg-none">
+          <button id="navbar-close-button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            class="close float-right">&times;</button>
+        </li>
+
+        {% for tab in site.data.tabs %}
+        {% assign ref = site.baseurl | append: "/" %}
+    
+        {% if tab.path %}
+          {% assign ref = ref | append: tab.path | append: "/" %}
+          {% if tab.url %}
+            {% assign ref = ref | append: tab.url | append: "/" %}
+          {% endif %}
+        {% endif %}
+  
+
+        <li class="nav-item 
+        {% if tab.id == page.active_tab_id %} active {% endif %}">
+
+          <!-- <a class="nav-link" href="{{ ref }}"> <i class="{{tab.icon}}"></i> <span>{{tab.name}}</span></a> -->
+          <a class="nav-link" href="{{ ref }}"><span class="nav-menu">{{tab.name}}</span></a>
+        </li>
+
+      {% endfor %}
+        <li class="nav-item d-lg-none" style="padding-top: 20px;">
+          <div class="trending-tags">
+            <span class="text-muted mb-4" style="font-size: 1.4rem;">{{ site.data.label.panel.trending_tags }}</span>
+            
+            {% include trending-tags.html tag_size=5 %}
+
+            <div class="d-block" style="padding-top: 20px;">
+              {% for tag in trending_tags %}
+              {% capture url %}/tags/{{ tag | downcase | url_encode }}/{% endcapture %}
+              <a class="post-tag" href="{{ url | relative_url }}">{{ tag | replace: '-', ' ' }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </li>
+    </div>
+    </ul>
+  </nav>
+</div>

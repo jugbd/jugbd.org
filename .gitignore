@@ -1,0 +1,20 @@
+# hidden files
+.*
+
+!/.gitignore
+
+# python compiled files
+*.pyc
+
+# jekyll debug
+_site
+
+# Jeykll Gemfile.lock
+Gemfile.lock
+
+# yui-compressor
+*.jar
+
+# bundle cache
+#vendor
+#!/assets/css/bootstrap/src/vendor

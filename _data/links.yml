@@ -1,0 +1,10 @@
+search:
+  -
+    name: Categories
+    url: "/tabs/categories"
+  -
+    name: Tags
+    url: "/tabs/tags"
+  -
+    name: Archives
+    url: "/tabs/archives"

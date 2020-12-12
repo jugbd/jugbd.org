@@ -1,0 +1,18 @@
+{% assign MAX_SIZE = 5 %}
+
+{% assign all_list = "" | split: "" %}
+
+{% for entry in site.data.updates %}
+  {% capture elem %}
+    {{- entry.lastmod -}}::{{- entry.filename -}}
+  {% endcapture %}
+  {% assign all_list = all_list | push: elem %}
+{% endfor %}
+
+{% assign all_list = all_list | sort | reverse %}
+
+{% assign update_list = "" | split: "" %}
+
+{% for entry in all_list limit:MAX_SIZE %}
+  {% assign update_list = update_list | push: entry %}
+{% endfor %}

@@ -1,0 +1,53 @@
+---
+layout: compress
+# Default layout
+---
+
+<!DOCTYPE html>
+
+{% if site.lang %}
+  {% assign lang = site.lang | split: "_" | first %}
+{% else %}
+  {% assign lang = 'en' %}
+{% endif %}
+
+<!-- todo: Remove logic if we don't need dark mode -->
+{% capture prefer_mode %}
+  {% if site.theme_mode != "dual" %}
+    mode="{{ site.theme_mode }}"
+  {% endif %}
+{% endcapture %}
+
+<html lang="{{ lang }}" {{ prefer_mode }} >
+
+  {% include head.html %}
+
+  <body data-spy="scroll" data-target="#toc">
+    {% include search-results.html %}
+
+    <div id="topbar" class="container fixed-top">
+      {% include navbar.html %}
+    </div>
+
+    <div id="main-wrapper" class="container">
+      
+      
+      <div id="main">
+
+        {% include refactor-content.html content=content %}
+
+        {% include footer.html %}
+
+      </div>
+
+    </div> <!-- #main-wrapper -->
+    
+    <a id="back-to-top" href="#" class="btn btn-lg btn-box-shadow" role="button">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    {% include search-loader.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,6 @@
+{% assign content = include.content %}
+
+{% if content contains '<td class="rouge-gutter gl"><pre class="lineno">' %}
+  {% assign content = content | replace: '<td class="rouge-gutter gl"><pre class="lineno">', '<!-- <td class="rouge-gutter gl"><pre class="lineno">'%}
+  {% assign content = content | replace: '</td><td class="rouge-code">', '</td> --><td class="rouge-code">' %}
+{% endif %}

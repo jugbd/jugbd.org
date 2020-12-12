@@ -1,0 +1,9 @@
+-
+  name: Home
+  icon: "fas fa-home"
+  id: home
+-
+  name: Blog
+  icon: "fas fa-blog"
+  path: blog
+  id: blog

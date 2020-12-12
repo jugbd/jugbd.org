@@ -1,0 +1,42 @@
+<div id="search-result-wrapper" class="unloaded">
+  <div class="container d-flex flex-column justify-content-center">
+
+    <div class="row  justify-content-center mb-4">
+      <img src="/assets/img/logo/jugbd-logo.png" class="img-fluid" style="max-width: 25%;" alt="jugbd-logo">
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="d-flex flex-row col-12 justify-content-center">
+        <span id="search-wrapper" class="col-10 align-items-center">
+          <i class="fas fa-search fa-fw"></i>
+          <input class="form-control" id="search-input" type="search" placeholder="{{ site.data.label.search_hint }}...">
+          <i id="search-cleaners" class="fa fa-times-circle fa-fw"></i>
+        </span>
+        <span id="search-cancel">Cancel</span>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 post-content">
+        <div id="search-hints">
+          <div id="search-hint-links" class="row justify-content-center mb-4">
+            {% for link in site.data.links.search %}
+              <a class="post-collection-links" href="{{link.url}}">{{link.name}}</a>
+            {% endfor %}
+          </div>
+
+         <div id="search-hint-tg" class="row justify-content-center mb-4">
+            {% include trending-tags.html tag_size=10 %}
+      
+            {% for tag in trending_tags %}
+              {% capture url %}/tags/{{ tag | downcase | url_encode }}/{% endcapture %}
+              <a class="post-tag" href="{{ url | relative_url }}">{{ tag | replace: '-', ' ' }}</a>
+            {% endfor %}
+         </div>
+        </div>
+
+        <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
