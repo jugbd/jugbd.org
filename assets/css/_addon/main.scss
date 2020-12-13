@@ -51,7 +51,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Lusitana', serif, 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'EB Garamond', 'Lusitana', serif, 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
 #navbar-trigger {
@@ -1102,6 +1102,7 @@ div.post-content .table-wrapper {
 
   .post-content p {
     font-size: 18px;
+    line-height: 28px;
   }
 }
 
