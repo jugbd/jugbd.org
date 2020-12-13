@@ -1,12 +1,15 @@
 ---
 title: Customize the Favicon
 author: Cotes Chung
-date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+date: 2019-08-11T00:34:00.000+08:00
+categories:
+- Blogging
+- Tutorial
+tags:
+- favicon
 toc: false
----
 
+---
 In [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/), the image files of [Favicons](https://www.favicon-generator.org/about/) are placed in `assets/img/favicons/`. You may need to replace them with your own. So let's see how to customize these Favicons.
 
 With a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Icon Generator*](https://www.favicon-generator.org/) and upload your original image.
