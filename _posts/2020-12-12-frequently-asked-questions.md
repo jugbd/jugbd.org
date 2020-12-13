@@ -2,9 +2,9 @@
 title: 'Frequently Asked Questions '
 author: Bazlur Rahman
 date: 2020-12-12 05:00:00 +0000
-categories: []
+categories: [Blogging, FAQ]
 comments: true
-tags: []
+tags: [faq]
 image: /assets/media/faq.png
 
 ---
@@ -38,5 +38,3 @@ Answer:  To be a proficient Java programmer, you may need to have experience wit
 6\. Spring framework ( you might not need Java EE if you learn this framework, it's huge and widely used, however, learning both is preferable)  
 7\. Object Relational Mapping tool eg. Hibernate, Top-Link, iBatis.   
 8\. etc.
-
-Q3: 
