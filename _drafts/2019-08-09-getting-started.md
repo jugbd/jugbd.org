@@ -1,15 +1,17 @@
 ---
 title: Getting Started
 author: Cotes Chung
-date: 2019-08-09 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
+date: 2019-08-09T20:55:00.000+08:00
+categories:
+- Blogging
+- Tutorial
+tags:
+- getting started
 comments: true
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 pin: true
+
 ---
-
-
 ## Installation
 
 Clone or copy this repository in your desired envrionment. 
