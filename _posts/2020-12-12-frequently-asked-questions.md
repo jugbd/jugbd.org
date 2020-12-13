@@ -5,7 +5,7 @@ date: 2020-12-12 05:00:00 +0000
 categories: []
 comments: true
 tags: []
-image: assets/media/faq.png
+image: /assets/media/faq.png
 
 ---
 ## **Q1: I want to learn Java Enterprise Edition (JEE). How can I start?**
