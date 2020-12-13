@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 active_tab_id: home
 
 ---
