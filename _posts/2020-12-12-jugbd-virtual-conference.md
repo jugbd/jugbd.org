@@ -2,13 +2,8 @@
 title: JUGBD Virtual Conference 2020
 author: JUGBD
 date: 2019-12-12T00:00:00.000+06:00
-categories:
-- Video
-- Conference
-tags:
-- video
-- conference
-- panel discussion
+categories: [Video, Conference]
+tags: [video, conference, panel discussion]
 comments: true
 excerpt_separator: "<!--more-->"
 youtube_id: ozhbNmcD18g
