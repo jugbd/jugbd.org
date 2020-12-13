@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 active_tab_id: home
 
 ---
