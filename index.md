@@ -1,12 +1,10 @@
 ---
 layout: post
+title: Java User Group Bangladesh, a great place to learn java
 active_tab_id: home
 date: 2020-12-12 05:00:00 +0000
-
+image: assets/media/jugbd.jpg
 ---
-# Java User Group Bangladesh, a great place to learn java
-
-![](assets/media/jugbd.jpg "java user group meetup")
 
 Java User Group Bangladesh (JUGBD) is a volunteer organization that strives to distribute Java-related knowledge. Our plan to provide a meeting place for a java user group to get information, share resources and solutions, increase networking, expands Java Technology expertise, and above all, drink coke, eat pizza and have fun.
 
