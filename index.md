@@ -1,6 +1,7 @@
 ---
 layout: post
 active_tab_id: home
+date: 2020-12-12 05:00:00 +0000
 
 ---
 # Java User Group Bangladesh, a great place to learn java
