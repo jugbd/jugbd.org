@@ -1,0 +1,8 @@
+{% capture words %}
+{{ content | number_of_words | minus: 180 }}
+{% endcapture %}
+{% unless words contains '-' %}
+<div class="{% if include.class %}{{ include.class }}{% endif %}">
+    {{ words | plus: 180 | divided_by: 180 | append: ' minutes to read' }}
+</div>
+{% endunless %}
