@@ -14,7 +14,7 @@ tags:
 image: ''
 
 ---
-![](assets/media/mike-kenneally-zlwdjoktua8-unsplash.jpg)
+![Java](assets/media/mike-kenneally-zlwdjoktua8-unsplash.jpg "Java")
 
 Please bear with my attempt to inform you a little regarding the execution of Java code.
 
