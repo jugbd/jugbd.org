@@ -1,6 +1,6 @@
 ---
 layout: default
-title: hoodies
+title: JUGBD hoodie pre-order
 author: Bazlur
 date: 2020-12-12 05:00:00 +0000
 categories: []
