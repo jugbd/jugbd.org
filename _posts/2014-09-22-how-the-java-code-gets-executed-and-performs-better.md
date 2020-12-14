@@ -2,20 +2,12 @@
 title: How the java code gets executed and performs better?
 author: A N M Bazlur Rahman
 date: 2014-09-22T04:00:00.000+00:00
-categories:
-- Java
+categories: ['Articles', 'Java']
 comments: false
-tags:
-- Execution
-- 'Compilation '
-- JIT
-- 'Performance '
-- Java
-image: ''
+tags: ['Execution', 'Compilation', 'JIT', 'Performance', 'Java']
+image: 'https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949'
 
 ---
-![photo-1459755486867-b55449bb39ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80](https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80 "photo-1459755486867-b55449bb39ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1949&q=80")
-
 Please bear with my attempt to inform you a little regarding the execution of Java code.
 
 Java’s code is compiled into byte code, which Java’s virtual machine executes. This output is an intermediate language (IL) that is neither human-readable nor machine-executable. Only the virtual machine understands it. To execute this output, the virtual machine uses a Just in Time (JIT) compiler to interpret the byte code – so is Java an interpreted language as some people describe it, or is Java a compiled language? The answer: Java is both. Its source code is compiled with a static compiler into byte code – and then, the JIT interprets the compiler’s output.
