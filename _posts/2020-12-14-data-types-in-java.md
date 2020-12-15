@@ -5,6 +5,8 @@ date: 2020-12-14T04:00:00.000+00:00
 categories: ['Articles', 'Java']
 comments: true
 tags: ['Java', 'DataType']
+
+
 ----
 
 # Data types in Java
