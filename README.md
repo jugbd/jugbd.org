@@ -26,8 +26,6 @@ tags:
 - JUG
 - Bangladesh
 - Dhaka
-image: ''
-
 ---
 
 and then add your content here. 
