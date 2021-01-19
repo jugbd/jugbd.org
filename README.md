@@ -1,11 +1,10 @@
-#How to create a post? 
+# How to create a post? 
 
 We use Jekyll to publish content to the site.  
 
 You’ll find a folder called _posts. To create a new post you’ll need to create a new markdown file with a file name in this format:
 
-YYYY-MM-DD-title.md
-
+`YYYY-MM-DD-title.md`
 
 The format is the four-digit year, followed by a hyphen then a two-digit month, followed by another hyphen and two-digit day, followed by a hyphenated title, and ending with the markdown file extension.
 
