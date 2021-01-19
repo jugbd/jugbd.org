@@ -13,7 +13,7 @@ Today I am going to tell about uploading a file using spring webflux. And the mo
 <br /><br />
 **The real-life problem description I’ve faced:**
 <br />
-Have to upload any type of file but the condition is lines of the file have to be separated by a new line. There is no way you can save the file on the server. Create a list of String by reading the file, where each item of the list will be a single line of the file. Each item must have to match a validation rule otherwise, discard the whole file as it is corrupted. So, the summary is: `upload -> read -> check -> list of string` from the file without saving it.<br /><br />
+Have to upload any type of file, but the condition is lines of the file have to be separated by a new line. There is no way you can save the file on the server. Create a list of String by reading the file, where each item of the list will be a single line of the file. Each item must have to match a validation rule otherwise, discard the whole file as it is corrupted. So, the summary is: `upload -> read -> check -> list of string` from the file without saving it.<br /><br />
 So, the rough steps are:
 * Controller to consume the multipart file into Flux FilePart
 * Converting the file parts into Flux of String using dataBuffer
@@ -24,7 +24,7 @@ So, the rough steps are:
 Sounds scary? Well, I will explain to you step by step. So, what are we waiting for? Let’s dig in.
 ***
 ##1. Controller
-<script src="https://gist.github.com/eaiman-shoshi/6414a06db982e4d26adb1de51feff2cf.js"></script>
+gist link: [File Upload Controller](https://gist.github.com/eaiman-shoshi/6414a06db982e4d26adb1de51feff2cf "FileUploadController")
 
 This part is easy. This is a post endpoint that is able to accept multiple files. URL part is `upload-flux` and must have to use `consumes = MediaType.MULTIPART_FORM_DATA_VALUE`. As we can see I have used:
 ``` java
@@ -45,7 +45,7 @@ From the controller layer, `filePartFlux` is now passed to the service layer. I 
 
 **i. First method:**
 
-<script src="https://gist.github.com/eaiman-shoshi/a2122cf37624a1d2961f79551ebb86a0.js"></script>
+gist link: [getLines() method](https://gist.github.com/eaiman-shoshi/a2122cf37624a1d2961f79551ebb86a0 "getLines() method")
 
 In this method the `filePartFlux` is directly passed from the controller layer. Then we flatmap `filePartFlux` and get a new `Flux<String>` stream.
 ```java
@@ -69,7 +69,7 @@ Now, we get every String from the `Flux<String>` stream and by processing them v
 <br /><br />
 **ii. Second Method:**
 
-<script src="https://gist.github.com/eaiman-shoshi/4cca92f5d5861baa23362aa175a56e07.js"></script>
+gist link: [processAndGetLinesAsList() method](https://gist.github.com/eaiman-shoshi/4cca92f5d5861baa23362aa175a56e07 "processAndGetLinesAsList() method")
 
 This not so scary as it looks like. Just read and translate as it is written here.
 
