@@ -13,7 +13,7 @@ Now that you’ve got your new post file, you’ll have to add in a few more thi
 
 Examples -
 
-‘‘‘‘
+````
 ---
 title: A great place to learn and grow
 author: Bazlur Rahman
@@ -33,7 +33,7 @@ image: ''
 
 and then add your content here. 
 
-‘‘‘‘
+````
 
 Once your post is done, create a pull request. That's all.
 
