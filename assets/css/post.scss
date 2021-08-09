@@ -41,6 +41,7 @@ $prompt-newer: "{{ site.data.label.post.button.next }}";
   .post-preview-img {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    display: block;
     @include align-center;
   }
 }
