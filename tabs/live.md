@@ -2,10 +2,4 @@
 title: Live
 active_tab_id: live
 ---
-<div class="embed-responsive embed-responsive-16by9 iframe-preview">
-<iframe class="embed-responsive-item"
-    src="https://embed.restream.io/player/index.html?token=9069c9ae7434a63ccb5da6cc11f074b1"
-    frameborder="0" allowfullscreen></iframe>
-</div>
-
-<p>Powered by <a href="https://restream.io">Restream.io</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78O8lmS0jRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
