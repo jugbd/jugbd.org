@@ -20,6 +20,8 @@ image: 'https://scontent.fybz2-2.fna.fbcdn.net/v/t1.6435-9/240827498_10223639341
 LIVE: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/78O8lmS0jRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Join us: https://www.facebook.com/events/278509874085441
+
 
 OpenJDK 17 makes the interesting decision that deprecating a security feature (the SecurityManager) can actually improve security of the platform and running applications, setting out a path to remove a feature that hasn’t been used and hasn’t blocked many exploits.
 
