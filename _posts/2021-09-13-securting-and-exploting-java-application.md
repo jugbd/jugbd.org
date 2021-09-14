@@ -1,5 +1,5 @@
 ---
-title: Virtual Event:  Securing and Exploiting Java Applications
+title: Securing and Exploiting Java Applications
 author: A N M Bazlur Rahman
 date: 2021-09-12 04:00:00 +0000
 categories:
@@ -16,8 +16,6 @@ tags:
 image: 'https://scontent.fybz2-2.fna.fbcdn.net/v/t1.6435-9/240827498_10223639341925375_3019129279121883993_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=340051&_nc_ohc=OVp1bRl5bccAX-9I0r0&_nc_ht=scontent.fybz2-2.fna&oh=5e83761ddaad68f8ec8a2dbb31ce6831&oe=61666FC8'
 
 ---
-
-# Virtual Event:  Securing and Exploiting Java Applications
 
 LIVE: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/78O8lmS0jRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
