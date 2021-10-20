@@ -1,5 +1,6 @@
 ---
 title: "Strategy Design Pattern"
+author: Simanta Deb Turja
 categories:
   - Design-Patterns
 tags:
