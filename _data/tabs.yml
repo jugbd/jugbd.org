@@ -6,12 +6,10 @@
   path: blog
   id: blog
 -
+  name: Videos
+  url: https://www.youtube.com/c/JugbdOrg
+  id: videos
+-
   name: LIVE
   path: tabs/live
   id: live
-# External Link Sample
-# -
-#   name: External Link
-#   path: https://www.facebook.com/groups/jugbd
-#   id: some-id
-
