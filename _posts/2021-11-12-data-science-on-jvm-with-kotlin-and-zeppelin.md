@@ -19,7 +19,7 @@ image: 'https://scontent.fybz2-2.fna.fbcdn.net/v/t39.30808-6/256466534_102240030
 LIVE: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ys7UXFUzeec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Join us at : https://fb.me/e/4qZliR5dH
+Join us at : [Facebook](https://fb.me/e/4qZliR5dH)
 
 
 ## Abstract: 
