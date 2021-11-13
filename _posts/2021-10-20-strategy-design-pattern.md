@@ -1,13 +1,8 @@
 ---
 title: "Strategy Design Pattern"
 author: Simanta Deb Turja
-categories:
-  - Design-Patterns
-tags:
-  - design-pattern
-  - strategy-pattern
-  - clean-code
-  - turja
+categories: Design-Patterns
+tags: [design-pattern, strategy-pattern, clean-code, turja]
 comments: true
 image: https://i.ibb.co/YBBC7My/strategycover.png
 ---
