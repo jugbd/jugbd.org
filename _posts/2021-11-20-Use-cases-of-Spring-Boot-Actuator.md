@@ -2,16 +2,9 @@
 title: Use cases of Spring Boot Actuator
 author: Elias Hasnat
 date: 2021-11-20 04:00:00 +0900
-categories:
-- Article
-- News
+categories:[Article, News]
 comments: false
-tags:
-- Java
-- JUGBD
-- JUG
-- Bangladesh
-- Dhaka
+tags:[Java, JUGBD, JUG, Bangladesh, Dhaka]
 image: ''
 
 ---
