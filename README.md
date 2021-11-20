@@ -17,15 +17,9 @@ Examples -
 title: A great place to learn and grow
 author: Bazlur Rahman
 date: 2013-09-12 04:00:00 +0000
-categories:
-- Article
-- News
-tags:
-- Java
-- JUGBD
-- JUG
-- Bangladesh
-- Dhaka
+categories: [Event, News]
+tags: [Java, JUGBD, JUG, Event, Bangladesh, Dhaka]
+comments: true
 ---
 
 and then add your content here. 
