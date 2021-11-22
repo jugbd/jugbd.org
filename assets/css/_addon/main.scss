@@ -51,7 +51,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'EB Garamond', 'Lusitana', serif, 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  font-family: 'cascadia-code', 'Lusitana', serif, 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }
 
 #navbar-trigger {
@@ -125,7 +125,7 @@ $tab-count: {{ site.data.tabs | size }};
 
 #topbar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  
+
   i {
     color: var(--link-color);
   }
@@ -272,7 +272,7 @@ $tab-count: {{ site.data.tabs | size }};
   display: none;
   font-size: 1.1rem;
   font-weight: 600;
-  font-family: sans-serif;
+  font-family: cascadia-code;
   color: var(--topbar-text-color);
   text-align: center;
   width: 70%;
@@ -741,7 +741,7 @@ div.post-content .table-wrapper {
   border: 1px solid !important;
   padding: 6px;
   margin: 20px 0;
-  
+
   background: linear-gradient(to right, var(--btn-active-bg) 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -959,7 +959,7 @@ div.post-content .table-wrapper {
     margin-bottom: 2rem;
     padding: 1rem;
   }
-  
+
   .navbar-collapse.collapsing .navbar-nav {
       display: block;
       position: fixed;
