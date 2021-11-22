@@ -13,10 +13,9 @@ Pre-COVID, we used to meet a place and then talk, share resources and solutions,
 Since then, we have been doing everything virtually and operating through the Facebook group. It also gave us the opportunity to go beyond the border. We bring 
 many international and renowned speakers with great talks. 
 
-**Join the group to follow all our activities.
-**
+**Join the group to follow all our activities.**
 
-Facebook: [https://www.facebook.com/groups/jugbd](https://www.facebook.com/groups/jugbd)
+Facebook: [https://www.facebook.com/groups/jugbd](https://www.facebook.com/groups/jugbd)\
 Twitter: [https://twitter.com/jugbdorg](https://twitter.com/jugbdorg)
 
 > If you want to reach out to us, tweet us or join the facebook group.
