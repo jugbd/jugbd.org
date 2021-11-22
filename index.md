@@ -19,6 +19,8 @@ many international and renowned speakers with great talks.
 Facebook: [https://www.facebook.com/groups/jugbd](https://www.facebook.com/groups/jugbd)
 Twitter: [https://twitter.com/jugbdorg](https://twitter.com/jugbdorg)
 
+> If you want to reach out to us, tweet us or join the facebook group.
+
 Best,
 
 Java User group Bangladesh
