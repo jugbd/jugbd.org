@@ -6,6 +6,8 @@ categories: Conference
 tags:  [Event, News]
 comments: true
 image: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F203928509%2F46259989947%2F1%2Foriginal.20211222-141645?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=667b1bafd236f8d394ce3b385990268a"
+pin: true
+
 ---
 
 #Java Developers' Conference | Regisrations are now open
@@ -30,7 +32,7 @@ Keep an eye on the Facebook group (https://www.facebook.com/groups/jugbd) for fu
 
 Location : https://goo.gl/maps/irG6b7eQizFnsCYN7
 
-Registration Link: https://www.eventbrite.com/e/java-developers-conference-registration-230644683457
+Registration Link: (https://www.eventbrite.com/e/java-developers-conference-registration-230644683457)[https://www.eventbrite.com/e/java-developers-conference-registration-230644683457]
 
 
 Thank you.  
