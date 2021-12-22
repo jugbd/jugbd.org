@@ -7,7 +7,7 @@ tags: [video, conference, panel discussion]
 comments: true
 excerpt_separator: "<!--more-->"
 youtube_id: ozhbNmcD18g
-pin: true
+pin: false
 
 ---
 ## JUGBD Virtual Conference 2020
