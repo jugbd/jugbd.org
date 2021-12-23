@@ -28,11 +28,11 @@ Attending this event—
 
 Please bring some business cards with you on the day of the event for exchanging with your fellow professionals. We request you forward this invitation to other Java developers/Professionals in your network who you think will be interested in this event.
 
-Keep an eye on the Facebook group (https://www.facebook.com/groups/jugbd) for further updates.
+Keep an eye on the [Facebook group](https://www.facebook.com/groups/jugbd) for further updates.
 
-Location : https://goo.gl/maps/irG6b7eQizFnsCYN7
+Location : [https://goo.gl/maps/irG6b7eQizFnsCYN7](https://goo.gl/maps/irG6b7eQizFnsCYN7)
 
-Registration Link: (https://www.eventbrite.com/e/java-developers-conference-registration-230644683457)[https://www.eventbrite.com/e/java-developers-conference-registration-230644683457]
+Registration Link: [https://www.eventbrite.com/e/java-developers-conference-registration-230644683457](https://www.eventbrite.com/e/java-developers-conference-registration-230644683457)
 
 
 Thank you.  
