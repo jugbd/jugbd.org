@@ -9,7 +9,7 @@ pin: false
 
 ---
 
-## INSIDE JAVA: A DISCUSSION WITH BRUNO SOUZA
+## THE JAVA DEVELOPER CAREER: HOW TO PREPARE AND HAVE AN AMAZING CAREER IN 2022
 **A N M Bazlur Rahman**
 Sr. Software Engineer, Loblaw Digital\
 <img src="https://scontent.fybz2-2.fna.fbcdn.net/v/t39.30808-6/270036953_10224233765505593_1602994417077110033_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=b9115d&_nc_ohc=6BNDFPpdF68AX96-GUc&_nc_ht=scontent.fybz2-2.fna&oh=00_AT96jzYYQ9iMbpiC0ST0LH4iJ09OvqLVtmVQxVoox5CHYg&oe=61D039D6" width="200"/>
