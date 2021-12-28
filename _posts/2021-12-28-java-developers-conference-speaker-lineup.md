@@ -12,12 +12,12 @@ pin: false
 ## INSIDE JAVA: A DISCUSSION WITH BRUNO SOUZA
 **A N M Bazlur Rahman**
 Sr. Software Engineer, Loblaw Digital\
-<img src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.30808-6/270096627_10224233267053132_158818472823554242_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=b9115d&_nc_ohc=OYAKpKioYO0AX8mnLab&_nc_ht=scontent.fybz2-1.fna&oh=00_AT-brf0zrZDF97CmCfd1DV32DV_SbV3ewey-kAlQlKeidg&oe=61CF456B" width="200"/>
+<img src="https://scontent.fybz2-2.fna.fbcdn.net/v/t39.30808-6/270036953_10224233765505593_1602994417077110033_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=b9115d&_nc_ohc=6BNDFPpdF68AX96-GUc&_nc_ht=scontent.fybz2-2.fna&oh=00_AT96jzYYQ9iMbpiC0ST0LH4iJ09OvqLVtmVQxVoox5CHYg&oe=61D039D6" width="200"/>
 
 **Bruno Souza,**
 Java Champion, Executive Member of JCP
 
-<img src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.30808-6/270296741_10224233267013131_4013372860208474714_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=b9115d&_nc_ohc=OGzd7aRYa4sAX_509yG&_nc_ht=scontent.fybz2-1.fna&oh=00_AT9a9RRUBgCQMu8YSvmt8wHOojyEpWmVSKUyy0y68tHNOQ&oe=61CF2592" width="200"/>
+<img src="https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/270155956_10224233765745599_8507194198212999551_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=b9115d&_nc_ohc=8BG6uyEc6mQAX8ypOvK&_nc_ht=scontent-ort2-2.xx&oh=00_AT_kb1wyDQ_sbGeQFU3lP70mwOizvx_h-OjAU7AI5ioW3Q&oe=61CFB78F" width="200"/>
 
 
 In this talk, we will discuss what's going on in the recent java ecosystem and will take questions from the audience. 
