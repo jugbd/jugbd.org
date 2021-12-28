@@ -9,9 +9,6 @@ pin: false
 
 ---
 
-# Java Developers' Conference, 2021
-## Speaker Lineup: 
-
 ## INSIDE JAVA: A DISCUSSION WITH BRUNO SOUZA
 **A N M Bazlur Rahman**
 Sr. Software Engineer, Loblaw Digital\
