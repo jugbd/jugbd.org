@@ -1,5 +1,5 @@
 ---
-title: "Java Developers' Conference | Speaker Lineup"
+title: "Java Developers' Conference, 2021 | Speaker Lineup"
 author: A N M Bazlur Rahman
 date: 2021-12-22 04:00:00 +0000
 categories: Conference 
@@ -50,7 +50,7 @@ CTO, bKash Limited
 <img src="https://scontent.fybz2-1.fna.fbcdn.net/v/t39.30808-6/270130480_10224233267373140_6367798125423916309_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=b9115d&_nc_ohc=wKZxc9BIkwEAX_0ozeh&tn=v-9Z39jPauJCjIji&_nc_ht=scontent.fybz2-1.fna&oh=00_AT88GN5PoIXle3jyL_wt0ZSnk5Uxmrwyv1DY-AhiOsmwgA&oe=61CF3EB5" width="200"/>
 
 
-In this talk, we will zoom in and share the journey of bKash, how it started and what some of our struggles were and how we overcame them from the inside with the community. 
+In this talk, we will zoom in and share the journey of bKash with the community from the inside, how it started and what some of our struggles were and how we overcame them. 
 
 ## LOG4J ISN'T KILLING THE JAVA
 **Erik Coslow**\
