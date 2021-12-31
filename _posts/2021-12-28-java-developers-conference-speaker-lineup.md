@@ -12,7 +12,7 @@ pin: false
 ## THE JAVA DEVELOPER CAREER: HOW TO PREPARE AND HAVE AN AMAZING CAREER IN 2022
 **[A N M Bazlur Rahman](https://www.linkedin.com/in/bazlur/)**\
 Sr. Software Engineer, Loblaw Digital\
-<img src="/img/bazlur.jpeg" width="200"/>
+<img src="/assets/img/bazlur.jpeg" width="200"/>
 
 **[Bruno Souza](https://www.linkedin.com/in/brjavaman/)**\
 Java Champion, Executive Member of JCP
