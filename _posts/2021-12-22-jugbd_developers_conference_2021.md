@@ -6,7 +6,7 @@ categories: Conference
 tags:  [Event, News]
 comments: true
 image: "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F203928509%2F46259989947%2F1%2Foriginal.20211222-141645?h=2000&w=720&auto=format%2Ccompress&q=75&sharp=10&s=667b1bafd236f8d394ce3b385990268a"
-pin: true
+pin: false
 
 ---
 
