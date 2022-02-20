@@ -1,3 +1,13 @@
+---
+title: All about Generics
+author: Syed Mainul Hasan
+date: 2022-02-20 01:45:00 +0000
+type: post
+categories: [Tutorial, Java]
+tags: [Java, JUGBD, JUG, Generics]
+comments: true
+---
+
 ## Advantages
 
 1. Type-safety
@@ -143,7 +153,7 @@ class GenericsUpperBoundTest <T extends Daughter>{
 }
 ```
 
-### Lower bounded wildcard
+## Lower bounded wildcard
 1. Lower bounded wildcard is never possible at definition level, rather we can use lower bounds at declaration and passing through the parameter
 
 example: Both the below codes will prone to error.
