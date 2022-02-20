@@ -175,7 +175,9 @@ class GenericsLowerBoundTest <? super Son> {
 }
 
 ```
+
 or
+
 ```
     public <? super Son> void addSon(? p){ // We can never use wildcard to represent a type, but we could use the generic type T in the upper bound
         System.out.println(p);
