@@ -1,7 +1,7 @@
 ---
 title: All about Generics
 author: Syed Mainul Hasan
-date: 2022-02-20 01:45:00 +0000
+date: 2022-02-19 01:45:00 +0000
 type: post
 categories: [Tutorial, Java]
 tags: [Java, JUGBD, JUG, Generics]
