@@ -28,7 +28,7 @@ class GrandChild3 extends Son {}
 
 ### Upper bound
 
-1. Upper bound works at definition level. With upper bound at definition level, we can never use wildcard.
+* Upper bound works at definition level. With upper bound at definition level, we can never use wildcard.
 
 Example of definition level:
 
@@ -59,14 +59,14 @@ In the below example, we are using upper bound as Son for generic type P, while 
     
 ```
 
-2. At definition level, we can never use wildcard, rather it requires a specific generic type. So the following code will be invalid.
+* At definition level, we can never use wildcard, rather it requires a specific generic type. So the following code will be invalid.
 
 ```
 class GenericsUpperBoundTest <? extends Daughter>{}
 
 ```
 
-3. However, we can use upper bounded wildcard in the below scenarios.
+* However, we can use upper bounded wildcard in the below scenarios.
 
 
 ```
@@ -77,7 +77,7 @@ List<? extends GrandPa> childrenOfGrandPa = List.of(new GrandPa(), new Daughter(
 This is a scenario of using wildcard in upper bound definition. This code will work.
 We can call it definition level use case, because we defined the List and populated with value in one go
 
-4. Another example:
+* Another example:
 
 ```
 public void addSon(List<? extends Son> p){
@@ -88,7 +88,7 @@ public void addSon(List<? extends Son> p){
 Even though we said, wildcards cannot be used at definition level, but here we defined the method. Please note that, even though we defined the method, we didn't define the list items here.
 Rather, we defined and populated them at some above point of caller method.
 
-5. In the below scenario, even though we tried like above approach of defining the list items, but it will not work while adding the items.
+* In the below scenario, even though we tried like above approach of defining the list items, but it will not work while adding the items.
 
 ```
 List<? extends Daughter> list = new ArrayList<>();
@@ -101,7 +101,7 @@ List<? extends Daughter> list = new ArrayList<>();
     list.add(grandChild3);
 ```
 
-7. If we try to use a generic type T with upper bound for the above example, it will fall back to compilation error.
+* If we try to use a generic type T with upper bound for the above example, it will fall back to compilation error.
    The reason is, at implementation level, it requires only an specific type
 
 ```
@@ -165,7 +165,8 @@ class GenericsUpperBoundTest <T extends Daughter>{
 ```
 
 ## Lower bounded wildcard
-1. Lower bounded wildcard is never possible at definition level, rather we can use lower bounds at declaration and passing through the parameter
+
+* Lower bounded wildcard is never possible at definition level, rather we can use lower bounds at declaration and passing through the parameter
 
 example: Both the below codes will prone to error.
 
@@ -187,7 +188,7 @@ or
 The reason is because, if we keep it as wildcard, we can not symbolify the type of variables or fields defined inside the class or method with the wildcard.
 
 
-2. Lower bound only works for any declaration, and also supports wildcard operator.
+* Lower bound only works for any declaration, and also supports wildcard operator.
 
 Example:
 
