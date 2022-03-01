@@ -82,3 +82,50 @@ ResponseEntity<?> getAll() {
 }
 
 ```
+
+#### Unbounded wildcard parameterized type
+
+A generic type that does not contain any boundary of upper or lower limit, only contains wildcard as type.
+
+```
+
+ArrayList<?>  list = new ArrayList<Long>();  
+//or
+ArrayList<?>  list = new ArrayList<String>();  
+//or
+ArrayList<?>  list = new ArrayList<Employee>(); 
+
+```
+
+#### Bounded wildcard parameterized type
+
+Bounded wildcard have 2 types - upper bounded and lower bounded.
+These bounds put some restrictions of range of classes that can be used as generic types.
+We usually achieve the upper bound limit by `extends` and lower bound limit by `super` keyword.
+
+##### Upper bounded wildcard
+
+Let's assume, we have a method, that takes a parameter of List. The list items can have different instances
+of a class, that has multiple child class. Now, we don't know, at which point of time which child class instance
+will be added in the list. In such case, we can simply set the upper bounded wildcard.
+
+```
+
+List<Integer> ints = Arrays.asList(1,2,3,4,5);
+System.out.println(sum(ints));
+      
+---------------------------------------------------
+
+private static Number sum (List<? extends Number> numbers){
+  double s = 0.0;
+  for (Number n : numbers)
+     s += n.doubleValue();
+  return s;
+}
+
+```
+
+##### Lower bounded wildcard
+
+When we want to set a lower limit of a class hierarchy, and we don't want to add any instance of any class below to that
+hierarchy, we use `super` keyword to make this lower bounded wildcard.
