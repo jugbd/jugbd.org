@@ -129,3 +129,62 @@ private static Number sum (List<? extends Number> numbers){
 
 When we want to set a lower limit of a class hierarchy, and we don't want to add any instance of any class below to that
 hierarchy, we use `super` keyword to make this lower bounded wildcard.
+
+To demonstrate, let us create 3 classes - Fruit, Apple and AsianApple
+
+```
+
+class Fruit {
+    @Override
+    public String toString() {
+        return "Any fruit!!";
+    }
+}
+
+class Apple extends Fruit {
+    @Override
+    public String toString() {
+        return "This is an Apple !!";
+    }
+}
+
+class AsianApple extends Apple {
+    @Override
+    public String toString() {
+        return "This is an AsianApple !!";
+    }
+}
+
+```
+
+```
+
+Set<? extends Apple> appleSet = new HashSet<>();
+        appleSet.add(new Apple());
+        appleSet.add(new AsianApple());
+        appleSet.add(new Fruit());
+        appleSet.add(new Object());
+
+
+        List<? super Apple> basket = List.of(new Apple(), new AsianApple(), new Fruit(), new Object());
+
+        basket.add(new Apple());    //Successful
+        basket.add(new AsianApple()); //Successful
+        basket.add(new Fruit());    //Compile time error
+        basket.add(new Object());    //Compile time error
+
+
+
+        List<AsianApple> basket2 = new ArrayList<>();
+        basket2.add(new AsianApple());
+        printApples(basket2);
+
+        List<Fruit> basket3 = new ArrayList<>();
+        basket3.add(new AsianApple());
+        basket3.add(new Apple());
+        basket3.add(new Fruit());
+        printApples(basket3);
+
+
+
+```
