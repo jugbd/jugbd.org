@@ -37,7 +37,7 @@ In bytecode it will be old java syntax prior to Java 5.
 1. `<>` - Diamond operator - we put a generic type inside it.
 2. `T` - known as a Generic type. We can actually use any character or word instead of T here. usually used as `<T>`
 3. `?` - known as wildcard. We use it like `<?>`
-4. ``exctnds`` - Used to set Upper Bound of Generic type. Which means, we can not use any parent class of this upper bounded class.
+4. ``extends`` - Used to set Upper Bound of Generic type. Which means, we can not use any parent class of this upper bounded class.
 5. ``super`` - Used to set Lower Bound of Generic type. We cannot use any child class of this lower bounded class.
 
 Let's start our today's discussion to explain using Generics with wildcards.
