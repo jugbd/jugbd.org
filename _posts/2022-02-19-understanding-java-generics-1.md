@@ -157,34 +157,133 @@ class AsianApple extends Apple {
 
 ```
 
-```
-
-Set<? extends Apple> appleSet = new HashSet<>();
-        appleSet.add(new Apple());
-        appleSet.add(new AsianApple());
-        appleSet.add(new Fruit());
-        appleSet.add(new Object());
-
-
-        List<? super Apple> basket = List.of(new Apple(), new AsianApple(), new Fruit(), new Object());
-
-        basket.add(new Apple());    //Successful
-        basket.add(new AsianApple()); //Successful
-        basket.add(new Fruit());    //Compile time error
-        basket.add(new Object());    //Compile time error
-
-
-
-        List<AsianApple> basket2 = new ArrayList<>();
-        basket2.add(new AsianApple());
-        printApples(basket2);
-
-        List<Fruit> basket3 = new ArrayList<>();
-        basket3.add(new AsianApple());
-        basket3.add(new Apple());
-        basket3.add(new Fruit());
-        printApples(basket3);
-
-
+We will also define a method that receives a `List<? super Apple>` .
 
 ```
+
+public static void printApples(List<? super Apple> apples) {
+    System.out.println(apples);
+}
+
+```
+
+Now observe the following example. When we pass a list of `AsianApple` in the method 
+`printApples(...)`, it gives us compile time error. But when we try to pass a list of 
+`Fruit`, which is the super of `Apple`, it accepts it without any error.
+
+Interesting thing to observe, we can add **AsianApple** in the 2nd list, and it is acceptable. 
+But it is impossible to pass a list wholly of an unsupported type.
+
+```
+
+List<AsianApple> basket1 = new ArrayList<>();
+basket1.add(new AsianApple());
+printApples(basket1);   // Compilation error
+
+List<Fruit> basket2 = new ArrayList<>();
+basket2.add(new AsianApple());
+basket2.add(new Apple());
+basket2.add(new Fruit());
+printApples(basket2);
+
+```
+
+Now, let's see some limitations of `extends` and `super`.
+
+##### Limitations
+
+- We can create a list like `List<? extends Apple>` and instantiate the list. But when we try to add elements in it, it will give us compilation error.
+
+```
+
+    Set<? extends Apple> appleSet = new HashSet<>();
+    appleSet.add(new Apple());          // Compilation error
+    appleSet.add(new AsianApple());          // Compilation error
+
+```
+
+The reason is becuase we actually don't need to mention `? extends`. If we define a list of `Apple`, it simply can accept any child of `Apple` type.
+
+- However, we can define something like the following when we define it in one go.
+
+```
+
+    List<? super Apple> basket = List.of(new Apple(), new AsianApple());
+
+```
+
+- Notice the following example:
+```
+
+List<? super Apple> basket = new ArrayList<>();
+
+basket.add(new Apple());    //Successful
+basket.add(new AsianApple()); //Successful
+basket.add(new Fruit());    //Compile time error
+basket.add(new Object());    //Compile time error
+
+
+```
+
+Interesting fact here is, we were supposed to be able to add any super type of `Apple` in the list, but it seems to happen the opposite.
+When we try to add items in a list demonstrated above, it only accepts the children of the `super` type.
+
+- However, when try to create such a list in one go, the behavior is different. It accepts any type regardless of parent or child (any means any, even if not within the relationship chain).
+
+```
+
+    List<? super Apple> basket1 = List.of(new Apple(), new AsianApple(), new Fruit(), new Object(), 123, 12.45);
+
+```
+
+The reason is because when we define with `List.of(...)` it actually accepts objects and produces a list of `Object`. And `Object` is a super type of `Apple`.
+
+#### Where we cannot use Generic types
+
+- With static fields
+
+```
+
+public class GenericsExample<T>
+{
+   private static T member; //This is not allowed
+}
+
+```
+
+- We cannot instantiate any generic type
+
+```
+
+public class GenericsExample<T>
+{
+   public GenericsExample(){
+      new T();
+   }
+}
+
+```
+
+- We cannot refer to premitive types with Generic type
+
+```
+
+final List<int> ids = new ArrayList<>();    //Not allowed
+ 
+final List<Integer> ids = new ArrayList<>(); //Allowed
+
+```
+
+- We cannot create Generic exception classes
+
+```
+
+// causes compiler error
+public class GenericException<T> extends Exception {}
+
+```
+
+
+That's all for this article. In our next article we will discuss on **Arrays with Generics**, **Using Generic type as parameter of a class** and **Using Generic types with method or constructor definition**.
+
+Thank you for your patience and taking time to read this long article :)
