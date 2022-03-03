@@ -12,14 +12,16 @@ comments: true
 
 ### Type safety
 
-Using generics with helps us define a type to consume in and produce from, where it is used. Which means, we can be sure of
+Using generics helps us define a type to consume in and produce from, where it is used. Which means, we can be sure of
 adding a specific type of data in a Collection type for example (`List<Integer>`), and get the exact same type. This saves us from getting
-`ClassCastException` and saves us from lots of development pain.
+`ClassCastException` and from lots of development pain.
 
 ### Type erasure
 
 Type erasure means, all the additional information included while using Java Generics, are removed from bytecode while generated.
 In bytecode it will be old java syntax prior to Java 5.
+
+Alternatively we can say, we will be enforced to use a type in compile time, but the types are discarded at runtime.
 
 ## Where we can use Generics
 
@@ -44,7 +46,7 @@ Let's start our today's discussion to explain using Generics with wildcards.
 
 ### Using Generics with wildcards
 
-We have talked about wildcard above. Wildcard represents an unknown type. The followings are the examples of wildcard parameterized types.
+We have talked about wildcard above. Wildcard represents an unknown type. The followings are the examples of wildcard parameterized generics.
 
 ```
 
@@ -100,14 +102,14 @@ ArrayList<?>  list = new ArrayList<Employee>();
 #### Bounded wildcard parameterized type
 
 Bounded wildcard have 2 types - upper bounded and lower bounded.
-These bounds put some restrictions of range of classes that can be used as generic types.
+These bounds put some restrictions on range of classes that can be used as generic types.
 We usually achieve the upper bound limit by `extends` and lower bound limit by `super` keyword.
 
 ##### Upper bounded wildcard
 
 Let's assume, we have a method, that takes a parameter of List. The list items can have different instances
-of a class, that has multiple child class. Now, we don't know, at which point of time which child class instance
-will be added in the list. In such case, we can simply set the upper bounded wildcard.
+of a class, that has multiple child class. Now, we don't know, at which point of time which child class instance list
+will be passed through the method parameter. In such case, we can simply set the upper bounded wildcard.
 
 ```
 
@@ -128,7 +130,7 @@ private static Number sum (List<? extends Number> numbers){
 ##### Lower bounded wildcard
 
 When we want to set a lower limit of a class hierarchy, and we don't want to add any instance of any class below to that
-hierarchy, we use `super` keyword to make this lower bounded wildcard.
+hierarchy, we use `super` keyword to make this lower bounded wildcard. This applies for a method parameter.
 
 To demonstrate, let us create 3 classes - Fruit, Apple and AsianApple
 
@@ -157,7 +159,7 @@ class AsianApple extends Apple {
 
 ```
 
-We will also define a method that receives a `List<? super Apple>` .
+We will also define a method that receives a `List<? super Apple>` as parameter.
 
 ```
 
@@ -188,9 +190,9 @@ printApples(basket2);
 
 ```
 
-Now, let's see some limitations of `extends` and `super`.
+Now, let's see some limitations and exceptional cases of `extends` and `super`.
 
-##### Limitations
+##### Limitations and exceptional cases
 
 - We can create a list like `List<? extends Apple>` and instantiate the list. But when we try to add elements in it, it will give us compilation error.
 
@@ -213,6 +215,7 @@ The reason is becuase we actually don't need to mention `? extends`. If we defin
 ```
 
 - Notice the following example:
+
 ```
 
 List<? super Apple> basket = new ArrayList<>();
