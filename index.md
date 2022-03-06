@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: homepage
 title: Java User Group Bangladesh, a great place to have fun and learn java
 active_tab_id: about
 date: 2020-12-12 05:00:00 +0000
