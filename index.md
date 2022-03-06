@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="blog-index">  
-  {% assign post = site.posts.first %}
-  {% assign content = post.content %}
-  {% include post_detail.html %}
+<h1>Latest Post</h1>
+{% for post in site.posts limit:2 %}
+... Show the first post all big ...
+{% endfor %}
 </div>
