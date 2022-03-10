@@ -8,6 +8,12 @@ tags: [Java, JUGBD, JUG, Generics]
 comments: true
 ---
 
+## Introduction of Generics
+
+Generics means parameterized types. 
+The idea is to allow user defined class types (Integer, String, any class etc. for example) to be a parameter to methods, classes, and interfaces. Using Generics, it is possible to create classes that work with different data types. An entity such as class, interface, or method that operates on a parameterized type is a generic entity.
+
+
 ## Benifits of Generics
 
 ### Type safety
