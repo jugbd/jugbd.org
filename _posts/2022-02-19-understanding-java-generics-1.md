@@ -209,26 +209,14 @@ The reason is becuase we actually don't need to mention `? extends`. If we defin
 ```
 
     List<? super Apple> basket = List.of(new Apple(), new AsianApple());
+    
+    // Because we are populating all objects first, 
+    // then assigning the list in the left side object.
+    // So the above code satisfies the below valid condition
+    
+    List<? super Apple> basket = new ArrayList<Object>();
 
 ```
-
-- Notice the following example:
-```
-
-List<? super Apple> basket = new ArrayList<>();
-
-basket.add(new Apple());    //Successful
-basket.add(new AsianApple()); //Successful
-basket.add(new Fruit());    //Compile time error
-basket.add(new Object());    //Compile time error
-
-
-```
-
-Interesting fact here is, we were supposed to be able to add any super type of `Apple` in the list, but it seems to happen the opposite.
-When we try to add items in a list demonstrated above, it only accepts the children of the `super` type.
-
-- However, when try to create such a list in one go, the behavior is different. It accepts any type regardless of parent or child (any means any, even if not within the relationship chain).
 
 ```
 
@@ -236,7 +224,36 @@ When we try to add items in a list demonstrated above, it only accepts the child
 
 ```
 
-The reason is because when we define with `List.of(...)` it actually accepts objects and produces a list of `Object`. And `Object` is a super type of `Apple`.
+The reason is because when we define with `List.of(...)` it actually accepts objects and produces a list of `Object`. And `List<Object>` is a type of `List<? super Apple>`.
+
+- Notice the following example:
+
+```
+
+List<? super Apple> basket = new ArrayList<>();
+
+basket.add(new Apple());    //Successful
+basket.add(new AsianApple()); //Successful
+// basket.add(new Fruit());    //Compile time error
+// basket.add(new Object());    //Compile time error
+
+```
+
+Interesting fact here is, we were supposed to be able to add any super type of `Apple` in the list, but it seems to happen the opposite.
+When we try to add items in a list demonstrated above, it only accepts the children of the `super` type.
+
+
+#### PECS [Producer extends, Consumer super]
+
+- If we want to produce items, e.g.: iterate over a list or get items from a list, we use extends.
+
+The reason is that we cannot know which subtype or `Fruit` our collection will hold. 
+So it is safe to get the object from the list and store in a `Fruit` type.
+
+- If we want to add items in our collection, we use super.
+
+The reason is that we don't care what are already stored in the collection. 
+As long as we are adding a `Fruit` and it's subtype in the collection, the compiler doesn't complain. 
 
 #### Where we cannot use Generic types
 
